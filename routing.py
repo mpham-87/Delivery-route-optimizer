@@ -56,8 +56,7 @@ def route_priority(package, truck, addresses, distance_matrix):
         hours=distance / TRUCK_SPEED_MPH
     )
 
-    # EOD packages are lower priority than packages
-    # that have a specific delivery deadline.
+    # EOD packages are lower priority than packages that have a specific delivery deadline.
     if package.deadline == "EOD":
         return (
             1,
@@ -73,8 +72,7 @@ def route_priority(package, truck, addresses, distance_matrix):
         truck.current_time + travel_time
     )
 
-    # Slack is the amount of time remaining
-    # before the deadline after arriving.
+    # Slack is the amount of time remaining before the deadline after arriving.
     slack = deadline - estimated_arrival
 
     return (
@@ -107,9 +105,8 @@ def deliver_truck(
 
     undelivered_packages = []
 
-    # ----------------------------------------
     # Load package objects onto the truck.
-    # ----------------------------------------
+  
     for package_id in truck.package_ids:
         package = package_table.lookup(
             package_id
@@ -125,18 +122,16 @@ def deliver_truck(
                 truck.departure_time
             )
 
-    # ----------------------------------------
+ 
     # Reset truck state before routing.
-    # ----------------------------------------
     truck.current_address = "HUB"
     truck.current_time = truck.departure_time
     truck.mileage = 0.0
     truck.route = ["HUB"]
     truck.return_time = None
 
-    # ----------------------------------------
+
     # Deliver all assigned packages.
-    # ----------------------------------------
     while undelivered_packages:
 
         # Choose the package with the highest urgency.
@@ -179,9 +174,8 @@ def deliver_truck(
             next_package.address
         )
 
-        # ----------------------------------------
+
         # Deliver every package at this address.
-        # ----------------------------------------
         packages_at_stop = []
 
         for package in undelivered_packages:
@@ -202,9 +196,8 @@ def deliver_truck(
                 package
             )
 
-    # ----------------------------------------
+
     # Return the truck to the hub.
-    # ----------------------------------------
     if truck.current_address != "HUB":
 
         return_distance = distance_between(
@@ -242,13 +235,11 @@ def all_deadlines_met(package_table):
 
     for package in package_table.all_packages():
 
-        # EOD packages do not have a
-        # specific clock deadline.
+        # EOD packages do not have a specific clock deadline.
         if package.deadline == "EOD":
             continue
 
-        # A missing delivery time means
-        # the package was never delivered.
+        # A missing delivery time means the package was never delivered.
         if package.delivery_time is None:
             return False
 
