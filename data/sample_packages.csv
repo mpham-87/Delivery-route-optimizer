@@ -1,0 +1,41 @@
+Package ID,Address,City,State,Zip,Deadline,Weight,Notes
+1,100 Pine St,Metroville,CA,95001,09:00 AM,5,
+2,250 Oak Ave,Metroville,CA,95002,10:30 AM,12,
+3,75 Market St,Metroville,CA,95003,EOD,7,
+4,410 Cedar Blvd,Metroville,CA,95004,09:00 AM,4,
+5,880 Lake Dr,Metroville,CA,95005,EOD,10,
+6,320 Hill Rd,Metroville,CA,95006,10:30 AM,3,
+7,1400 River Pkwy,Metroville,CA,95007,EOD,15,
+8,615 Birch Ln,Metroville,CA,95008,EOD,6,
+9,45 Sunset Ave,Metroville,CA,95009,10:30 AM,2,Delayed until 09:05 AM
+10,960 Garden St,Metroville,CA,95010,EOD,9,
+11,205 Harbor Rd,Metroville,CA,95011,EOD,8,
+12,730 Willow Ct,Metroville,CA,95012,09:00 AM,5,
+13,111 Central Ave,Metroville,CA,95013,10:30 AM,11,Must be delivered with package 14
+14,525 Maple St,Metroville,CA,95014,10:30 AM,6,Must be delivered with package 13
+15,390 Valley Rd,Metroville,CA,95015,EOD,4,
+16,815 Spruce Ave,Metroville,CA,95016,EOD,13,
+17,160 Park Blvd,Metroville,CA,95017,09:00 AM,3,Truck 1 only
+18,1220 Mission St,Metroville,CA,95018,EOD,5,
+19,455 Union St,Metroville,CA,95019,EOD,7,
+20,900 Cherry Ln,Metroville,CA,95020,10:30 AM,4,
+21,275 Meadow Ave,Metroville,CA,95021,EOD,12,
+22,640 Ridge Rd,Metroville,CA,95022,EOD,9,
+23,33 Plaza Dr,Metroville,CA,95023,10:30 AM,6,Truck 2 only
+24,1500 Cypress St,Metroville,CA,95024,EOD,8,
+25,710 Station Ave,Metroville,CA,95025,EOD,5,
+26,100 Pine St,Metroville,CA,95001,EOD,2,
+27,250 Oak Ave,Metroville,CA,95002,EOD,14,
+28,75 Market St,Metroville,CA,95003,10:30 AM,6,
+29,410 Cedar Blvd,Metroville,CA,95004,EOD,3,
+30,880 Lake Dr,Metroville,CA,95005,EOD,10,Delayed until 09:05 AM
+31,320 Hill Rd,Metroville,CA,95006,EOD,4,
+32,1400 River Pkwy,Metroville,CA,95007,10:30 AM,7,
+33,615 Birch Ln,Metroville,CA,95008,EOD,5,
+34,960 Garden St,Metroville,CA,95010,EOD,8,
+35,205 Harbor Rd,Metroville,CA,95011,EOD,11,
+36,111 Central Ave,Metroville,CA,95013,EOD,6,
+37,390 Valley Rd,Metroville,CA,95015,10:30 AM,4,
+38,160 Park Blvd,Metroville,CA,95017,EOD,9,
+39,455 Union St,Metroville,CA,95019,EOD,3,
+40,275 Meadow Ave,Metroville,CA,95021,EOD,7,
